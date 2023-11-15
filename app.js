@@ -4,13 +4,14 @@ const path = require('path');
 const cookieParser = require('cookie-parser');
 const logger = require('morgan');
 const hbs = require('hbs');
+require('./app_server/models/db');
 
 const indexRouter = require('./app_server/routes/index');
 const aboutRouter = require('./app_server/routes/about');
 const travelRouter = require('./app_server/routes/travel');
 const contactRouter = require('./app_server/routes/contact');
 const roomsRouter = require('./app_server/routes/rooms');
-const mealsRouter = require('./app_server/routes/meals.js');
+const mealsRouter = require('./app_server/routes/meals');
 const newsRouter = require('./app_server/routes/news');
 
 const app = express();
