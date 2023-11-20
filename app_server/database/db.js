@@ -59,4 +59,4 @@ const gracefulShutdown = (msg, callback) => {
     });
   });
 
-  require('./travlr');
+  require('./models/travlr');
