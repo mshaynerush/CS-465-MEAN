@@ -1,5 +1,5 @@
 module.exports = {
-    modelBaseDirector: "app_server/database/models",
+    modelBaseDirector: "app_api/database/models",
     models: ["*.js", "!db.js"],
     data: "data",
     db: "mongodb://localhost:27017/travlr"
