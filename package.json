@@ -9,6 +9,7 @@
     "devStart": "nodemon"
   },
   "dependencies": {
+    "@angular/core": "^7.2.16",
     "cookie-parser": "~1.4.4",
     "debug": "~2.6.9",
     "express": "^4.18.2",

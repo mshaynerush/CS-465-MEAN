@@ -6,10 +6,14 @@ const ctrlTrips = require('../controllers/trips');
 router
     .route('/trips')
     .get(ctrlTrips.tripsList)
+    .post(ctrlTrips.tripsAddTrip);
 
 // Single Trip
 router
     .route('/trips/:tripCode')
     .get(ctrlTrips.tripsFindCode)
+    .put(ctrlTrips.tripsUpdateTrip)
+
+
 
 module.exports = router;
