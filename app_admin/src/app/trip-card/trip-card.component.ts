@@ -1,6 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Router } from '@angular/router';
 import { Trip } from '../models/trip';
+
 @Component({
   selector: 'app-trip-card',
   templateUrl: './trip-card.component.html',
@@ -23,6 +24,13 @@ export class TripCardComponent implements OnInit {
     localStorage.removeItem("tripCode");
     localStorage.setItem("tripCode", trip.code);
     this.router.navigate(['edit-trip']);
+  }
+
+  private deleteTrip(trip: Trip): void {
+    console.log('Inside TripListingCopmonent#editTrip');
+    localStorage.removeItem("tripCode");
+    localStorage.setItem("tripCode", trip.code);
+    this.router.navigate(['delete-trip']);
   }
 
 }

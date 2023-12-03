@@ -13,6 +13,7 @@ router
     .route('/trips/:tripCode')
     .get(ctrlTrips.tripsFindCode)
     .put(ctrlTrips.tripsUpdateTrip)
+    .delete(ctrlTrips.tripsDeleteTrip)
 
 
 
