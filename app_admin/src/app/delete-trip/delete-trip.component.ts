@@ -41,4 +41,5 @@ export class DeleteTripComponent implements OnInit {
     this.tripService.deleteTrip(trip.code)
     this.router.navigate([''])
   }
+
 }

@@ -65,6 +65,8 @@ export class EditTripComponent implements OnInit {
           this.router.navigate(['']);
         })
     }
-    }
+  }
+  
+  get f() { return this.editForm.controls; }
 
 }
