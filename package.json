@@ -5,14 +5,12 @@
   "private": true,
   "author": "Shayne Rushton",
   "scripts": {
-    "start": "node ./bin/www",
+    "start": "node app.js",
     "devStart": "nodemon",
     "heroku-postbuild": "ng build —prod"
   },
   "dependencies": {
     "@angular/core": "^7.2.16",
-    "@angular/cli": "^17.2.0",
-    "@angular/compiler-cli": "^17.2.1",
     "cookie-parser": "~1.4.4",
     "crypto": "^1.0.1",
     "debug": "~2.6.9",
@@ -32,7 +30,7 @@
     "passport": "^0.7.0",
     "passport-local": "^1.0.0",
     "readline": "^1.3.0",
-    "request": "^2.88.2"
+    "request": "^2.88.2",
   },
   "seedgoose": {
     "modelBaseDirectory": "./app_server/database/models",
@@ -48,6 +46,5 @@
     "seedgoose": "^2.0.2",
     "@angular/cli": "^17.2.0",
     "@angular/compiler-cli": "^17.2.1",
-    "typescript": "^5.3.3"
   }
 }
