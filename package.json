@@ -45,6 +45,8 @@
   "devDependencies": {
     "hbs": "^4.2.0",
     "seedgoose": "^2.0.2",
+    "@angular/cli": "^17.2.0",
+    "@angular/compiler-cli": "^17.2.1",
     "typescript": "^5.3.3"
   }
 }
