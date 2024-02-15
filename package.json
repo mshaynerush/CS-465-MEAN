@@ -5,9 +5,9 @@
   "private": true,
   "author": "Shayne Rushton",
   "scripts": {
-    "start": "node app.js",
+    "start": "node ./bin/www",
     "devStart": "nodemon",
-    "postinstall": "ng build --aot -prod"
+
   },
   "dependencies": {
     "@angular/core": "^17.2.1",
