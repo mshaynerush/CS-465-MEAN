@@ -6,7 +6,8 @@
   "author": "Shayne Rushton",
   "scripts": {
     "start": "node ./bin/www",
-    "devStart": "nodemon"
+    "devStart": "nodemon",
+    “heroku-postbuild”: “ng build — prod”
   },
   "dependencies": {
     "@angular/core": "^7.2.16",
